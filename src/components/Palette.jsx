@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import Life from './Life';
+import { useNavigate } from 'react-router-dom';
 
-const Pallete = () => {
+const Palette = () => {
+     const navigate = useNavigate();
      const [startDate, setStartDate] = useState('');
      const [endDate, setEndDate] = useState('');
      const [errorMessage, setErrorMessage] = useState('');
@@ -12,13 +14,15 @@ const Pallete = () => {
                setErrorMessage('Please select start and end date');
           } else {
                setErrorMessage('');
+
                setLife(true);
           }
      }
 
      return (
           <div>
-               <h1>Life Pallete</h1>
+               <button onClick={() => navigate('/')}>Go Home</button>
+               <h1>Life Palette</h1>
                <span>Select dates you wanna live your life between</span>
                <div>
                     <label>
@@ -45,4 +49,4 @@ const Pallete = () => {
      );
 };
 
-export default Pallete;
+export default Palette;

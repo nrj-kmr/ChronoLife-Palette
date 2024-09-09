@@ -5,7 +5,7 @@ const Home = () => {
      return (
           <div>
                <h1>ChronoLife - Pallete</h1>
-               <button onClick={() => navigate('/life-pallete')}>have a glace of your life</button>
+               <button onClick={() => navigate('/palette')}>have a glace of your life</button>
           </div>
      );
 }
