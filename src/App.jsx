@@ -1,14 +1,16 @@
 // import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Dashboard from './pages/Dashboard'
 import Home from './pages/Home'
+import NotFoundPage from './pages/404'
+import Pallete from './components/Pallete'
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/life-pallete" element={<Pallete />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   )

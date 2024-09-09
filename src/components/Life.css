@@ -1,0 +1,26 @@
+.life-pallete {
+     border: 1px solid #ccc;
+     padding: 10px;
+     margin: 15px;
+}
+
+.grid-container {
+     display: flex;
+     flex-wrap: wrap;
+ }
+ 
+ .grid {
+     width: 20px;
+     height: 20px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     margin: 2px;
+ }
+ 
+ .grid.past {
+     background-color: rgb(102, 102, 203);
+ }
+
+ .grid.future {
+     background-color: gray;
+ }

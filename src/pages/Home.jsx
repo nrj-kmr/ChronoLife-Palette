@@ -5,9 +5,7 @@ const Home = () => {
      return (
           <div>
                <h1>ChronoLife - Pallete</h1>
-               <button onClick={() => navigate('/dashboard')}>Go to dashboard</button>
-               {/* note : write the login and signup page here */}
-               {/* then collect the user information */}
+               <button onClick={() => navigate('/life-pallete')}>have a glace of your life</button>
           </div>
      );
 }
