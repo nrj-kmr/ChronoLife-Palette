@@ -60,7 +60,7 @@ const Palette = () => {
                          onClick={printLife}
                          className='bg-gray-200 py-1 px-3 rounded-md text-black mt-4 hover:bg-gray-300'
                     >
-                         Print your life
+                         Track your life
                     </button>
                </div>
 
